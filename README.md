@@ -27,6 +27,20 @@ https://ru.aliexpress.com/store/product/ergodone-Custom-Mechanical-Keyboard-TKG-
 
 <img src="img/Ergodone.jpg" width="400px"/> <img src="img/Ergodone_PCB.jpg" width="400px"/>
 
+## Georgi
+https://www.gboards.ca/
+
+https://github.com/qmk/qmk_firmware/tree/master/keyboards/georgi
+
+<img src="img/Georgi.jpg" width="400px"/> <img src="img/Georgi2.jpg" width="400px"/> 
+
+## Gergo
+https://www.gboards.ca/
+
+https://github.com/qmk/qmk_firmware/tree/master/keyboards/gergo
+
+<img src="img/Gergo.jpg" width="400px"/>  <img src="img/Gergo2.jpg" width="400px"/> 
+
 ## Redox
 https://github.com/mattdibi/redox-keyboard  
 https://github.com/Lenbok/scad-redox-case  
