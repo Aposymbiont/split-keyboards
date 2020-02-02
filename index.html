@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Awesome Split Keyboards</title>
+        <script type="text/javascript" src="mixitup.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="a-s-k.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="controls">
+            <button type="button" class="control" data-filter="all">All</button>
+            <!-- Key layout:
+                 - Traditional: traditional keyboard
+                 - Ortholinear: keys in a grid or near-grid
+                 - Ergonomic: keys usually staggered by column, usually thumb keys
+                 - Dished: usually ergonomic but 3D shape -->
+            <button type="button" class="control" data-filter=".traditional">Traditional</button>
+            <button type="button" class="control" data-filter=".ortho">Ortholinear</button>
+            <button type="button" class="control" data-filter=".ergo">Ergonomic</button>
+            <button type="button" class="control" data-filter=".dish">Dished</button>
+            <!-- Number of rows (TODO) -->
+            <!-- Extras: Rotary encoder, trackpoint, LCD (TODO) -->
+            <!-- Connection: Wired, wireless (TODO) -->
+            <!-- Availability: Kit, Kit (discontinued), Kit (GB), prebuilt, prebuilt (GB), prebuilt (distontinued) (TODO) -->
+            <!-- Column stagger amount? -->
+
+            <datalist id="keysLegend">
+                <option value="30">
+                <option value="40">
+                <option value="50">
+                <option value="60">
+                <option value="70">
+                <option value="80">
+                <option value="90">
+                <option value="100">
+                <option value="110">
+                <option value="120">
+            </datalist>
+
+            <div class="range-slider">
+                <label class="range-slider-label">Minimum keys</label>
+                <input name="minKeys" class="range-slider-input" type="range" min="30" max="120" value="30" list="keysLegend"/>
+            </div>
+
+            <div class="range-slider">
+                <label class="range-slider-label">Maximum keys</label>
+                <input name="maxKeys" class="range-slider-input" type="range" min="30" max="120" value="120" list="keysLegend"/>
+            </div>
+        </div>
+
+        <div id="Container" class="container" data-ref="container">
+            <!--div class="fail-message"><span>No items were found matching the selected filters</span></div-->
+
+            <!-- Split ergo keyboards, usually with thumb keys -->
+
+            <div class="mix split ergo" data-keys="76">
+                <h3>Ergodox</h3>
+                <a href="https://www.ergodox.io"><img src="img/ErgoDox-original-min.png"></a>
+            </div>
+
+            <div class="mix split ergo" data-keys="76">
+                <h3>Ergodox infinity</h3>
+                <a href="https://input.club/devices/infinity-ergodox/"><img src="img/ErgoDox_Infinity.jpg"/></a>
+            </div>
+
+            <div class="mix split ergo" data-keys="76">
+                <h3>ErgoDox EZ</h3>
+                <a href="https://ergodox-ez.com"><img src="img/Ergodox_EZ.jpg"/></a>
+            </div>
+
+            <div class="mix split ergo" data-keys="76">
+                <h3>Ergodone</h3>
+                <a href="https://kbdfans.cn/collections/pcb/products/ergodone-keyboard-pcb-1pcs-free-shipping"><img src="img/Ergodone.jpg"/></a>
+            </div>
+
+            <div class="mix split ergo" data-keys="30">
+                <h3>Georgi</h3>
+                <a href="https://www.gboards.ca/"><img src="img/Georgi.jpg"/></a>
+            </div>
+
+            <div class="mix split ergo" data-keys="50">
+                <h3>Gergo</h3>
+                <a href="https://www.gboards.ca/"><img src="img/Gergo2.jpg"/></a>
+            </div>
+
+            <div class="mix split ergo" data-keys="70">
+                <h3>Redox</h3>
+                <a href="https://github.com/mattdibi/redox-keyboard"><img src="img/Redox.jpg"/></a>
+            </div>
+
+            <div class="mix split ergo" data-keys="36">
+                <h3>Minidox</h3>
+                <a href="https://github.com/That-Canadian/MiniDox_PCB"><img src="img/MiniDox.jpg"/></a>
+            </div>
+
+            <div class="mix split ergo" data-keys="54">
+                <h3>Ergotravel</h3>
+                <a href="https://github.com/jpconstantineau/ErgoTravel"><img src="img/Ergotravel.jpg"/></a>
+            </div>
+
+            <div class="mix split ergo" data-keys="42">
+                <h3>HeliDox</h3>
+                <a href="https://github.com/foostan/crkbd/"><img src="img/HeliDox.jpg"/></a>
+            </div>
+
+            <div class="mix split ergo" data-keys="62">
+                <h3>Zen</h3>
+                <a href="https://www.rgbkb.net/products/zen-keyboard"><img src="img/Zen.jpg"/></a>
+            </div>
+
+            <div class="mix split ergo" data-keys="68">
+                <h3>Sol</h3>
+                <a href="https://www.rgbkb.net/collections/sol-2"><img src="img/Sol.jpg"/></a>
+            </div>
+
+            <div class="mix split ergo encoder" data-keys="48">
+                <h3>Kyria</h3>
+                <a href="https://splitkb.com/products/kyria-kit-rev1-0"><img src="img/Kyria.jpg"/></a>
+            </div>
+
+            <div class="mix split ergo" data-keys="56">
+                <h3>Iris</h3>
+                <a href="https://keeb.io/products/iris-keyboard-split-ergonomic-keyboard"><img src="img/Iris.jpg"/></a>
+            </div>
+
+            <div class="mix split ergo" data-keys="60">
+                <h3>Fortitude60</h3>
+                <a href="https://github.com/Pekaso/fortitude60"><img src="img/Fortitude60-ikiriwhite.jpg"/></a>
+            </div>
+
+            <div class="mix split ergo" data-keys="46">
+                <h3>Mitosis</h3>
+                <a href="https://github.com/reversebias/mitosis-hardware"><img src="img/Mitosis.jpg"/></a>
+            </div>
+
+            <div class="mix single ergo" data-keys="42">
+                <h3>Atreus</h3>
+                <a href="https://github.com/technomancy/atreus"><img src="img/Atreus.jpg"/></a>
+            </div>
+
+            <div class="mix single ergo" data-keys="62">
+                <h3>Atreus62</h3>
+                <a href="https://github.com/profet23/atreus62/"><img src="img/Atreus62.jpg"/></a>
+            </div>
+
+            <div class="mix single ergo" data-keys="56">
+                <h3>Atreis</h3>
+                <a href="https://github.com/dekonnection/atreis"><img src="img/Atreis.jpg"/></a>
+            </div>
+
+            <div class="mix single ergo" data-keys="56">
+                <h3>Pteron</h3>
+                <a href="https://github.com/FSund/pteron-keyboard"><img src="img/Pteron.jpg"/></a>
+            </div>
+
+            <div class="mix single ergo" data-keys="60">
+                <h3>CatBoard ][</h3>
+                <a href="http://catboard.klava.org/"><img src="img/catboard.jpg"/></a>
+            </div>
+
+            <div class="mix split ergo" data-keys="64">
+                <h3>Keyboard.io Model01</h3>
+                <a href="https://shop.keyboard.io/"><img src="img/Keyboardio_Model01.jpg"/></a>
+            </div>
+
+            <div class="mix split ergo" data-keys="78">
+                <h3>ErgoDash</h3>
+                <a href="https://github.com/omkbd/ErgoDash"><img src="img/Ergodash.jpg"/></a>
+            </div>
+
+            <div class="mix split ergo" data-keys="58">
+                <h3>Lily58</h3>
+                <a href="https://github.com/kata0510/Lily58"><img src="img/lily58_keyboard.jpg"/></a>
+            </div>
+
+            <div class="mix single ergo" data-keys="86">
+                <h3>X-Bows</h3>
+                <a href="http://www.x-bows.com/"><img src="img/xbows.jpg"/></a>
+            </div>
+
+            <!-- 3D / scooped / dished -->
+
+            <div class="mix split dish" data-keys="70">
+                <h3>Dactyl</h3>
+                <a href="https://github.com/adereth/dactyl-keyboard"><img src="img/Dactyl.jpg"/></a>
+            </div>
+
+            <div class="mix split dish" data-keys="68">
+                <h3>Dactyl-ManuForm</h3>
+                <a href="https://github.com/tshort/dactyl-keyboard"><img src="img/Dactyl-ManuForm.jpg"/></a>
+            </div>
+
+            <div class="mix single dish" data-keys="86">
+                <h3>Kinesis Advantage 2</h3>
+                <a href="https://www.kinesis-ergo.com/shop/advantage2/"><img src="img/KinesisAdvantage2.jpg"/></a>
+            </div>
+
+            <div class="mix single dish" data-keys="110">
+                <h3>Maltron</h3>
+                <a href="https://www.maltron.com/"><img src="img/Maltron.jpg"/></a>
+            </div>
+
+            <!-- Ortholinear -->
+
+            <div class="mix split ortho" data-keys="48">
+                <h3>Let's Split</h3>
+                <a href="https://github.com/nicinabox/lets-split-guide"><img src="img/LetsSplit.jpg"/></a>
+            </div>
+
+            <div class="mix split ortho" data-keys="76">
+                <h3>Helix</h3>
+                <a href="https://github.com/MakotoKurauchi/helix"><img src="img/Helix.jpg"/></a>
+            </div>
+
+            <div class="mix split ortho" data-keys="46">
+                <h3>Chimera Ergo</h3>
+                <a href="https://github.com/GlenPickle/Chimera"><img src="img/Chimera.jpg"/></a>
+            </div>
+
+            <div class="mix split ortho" data-keys="48">
+                <h3>Levinson</h3>
+                <a href="https://keeb.io/products/levinson-lets-split-w-led-backlight"><img src="img/Levinson.jpg"/></a>
+            </div>
+
+            <div class="mix split ortho" data-keys="70">
+                <h3>Viterbi</h3>
+                <a href="https://keeb.io/products/viterbi-keyboard-pcbs-5x7-70-split-ortholinear"><img src="img/Viterbi.jpg"/></a>
+            </div>
+
+            <div class="mix split ortho" data-keys="60">
+                <h3>Nyquist</h3>
+                <a href="https://keeb.io/collections/frontpage/products/nyquist-keyboard?variant=48309345990"><img src="img/Nyquist.jpg"/></a>
+            </div>
+
+            <div class="mix split ortho" data-keys="108">
+                <h3>BFO-9000</h3>
+                <a href="https://keeb.io/products/bfo-9000-keyboard-customizable-full-size-split-ortholinear"><img src="img/BFO-9000.jpg"/></a>
+            </div>
+
+            <div class="mix split ortho" data-key="46">
+                <h3>For Science</h3>
+                <a href="https://github.com/peej/for-science-keyboard"><img src="img/ForScience.jpg"/></a>
+            </div>
+
+            <!-- Row-staggered (traditional) -->
+
+            <div class="mix split traditional" data-keys="45">
+                <h3>Fourier 40</h3>
+                <a href="https://keeb.io/collections/frontpage/products/fourier-40-split-staggered-keyboard"><img src="img/Fourier40.jpg"/></a>
+            </div>
+
+            <div class="mix split traditional" data-keys="89">
+                <h3>SmartYao/Koolertron Keyboard</h3>
+                <a href="http://xahlee.info/kbd/ly092_mini_keyboard.html"><img src="img/SmartYaoly092.jpg"/></a>
+            </div>
+
+            <div class="mix split traditional" data-keys="62">
+                <h3>Mistel Barocco</h3>
+                <a href="http://www.mistelkeyboard.com/keyboards/"><img src="img/MistelBarocco.jpg"/></a>
+            </div>
+
+            <div class="mix split traditional" data-keys="96">
+                <h3>VE.A</h3>
+                <a href="https://www.massdrop.com/buy/ve-a"><img src="img/VEA.jpg"/></a>
+            </div>
+
+            <div class="mix split traditional" data-keys="63">
+                <h3>Ultimate Hacking Keyboard</h3>
+                <a href="https://ultimatehackingkeyboard.com"><img src="img/Ultimatehackingkeyboard.jpg"/></a>
+            </div>
+
+            <div class="mix split traditional" data-keys="92">
+                <h3>Kinesis Freestyle Pro.jpg</h3>
+                <a href="https://www.kinesis-ergo.com/shop/freestyle-pro/"><img src="img/KinesisFreestylePro.jpg"/></a>
+            </div>
+
+            <div class="mix split traditional" data-keys="77">
+                <h3>Matias Ergo Pro</h3>
+                <a href="https://matias.ca/ergopro/pc/"><img src="img/matias_ergo_pro.jpg"/></a>
+            </div>
+
+            <div class="mix split traditional" data-keys="89">
+                <h3>Cherry ErgoPlus MX 5000 (G80-5000)</h3>
+                <a href="http://xahlee.info/kbd/Cherry_Ergoplus_keyboard.html"><img src="img/CherryErgoPlus.jpg"/></a>
+            </div>
+
+            <div class="mix split traditional" data-keys="68">
+                <h3>Dygma Raise</h3>
+                <a href="https://www.dygma.com/raise/"><img src="img/Dygma-Raise-Mechanical-Split-Keyboard_white.jpg"/></a>
+            </div>
+
+            <!-- Other -->
+
+            <div class="mix split single ergo ortho traditional" data-keys="88">
+                <h3>Dumang DK6</h3>
+                <a href="http://www.beyondq.com/"><img src="img/Dumang-DK6-1.png" /></a>
+            </div>
+
+            <div class="gap"></div>
+            <div class="gap"></div>
+            <div class="gap"></div>
+            <div class="gap"></div>
+        </div>
+
+        <script type="text/javascript" src="filter.js"></script>
+    </body>
+</html>

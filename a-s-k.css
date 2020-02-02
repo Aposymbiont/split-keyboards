@@ -1,0 +1,224 @@
+html,
+body {
+    height: 100%;
+    background: #f2f2f2;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* Controls
+---------------------------------------------------------------------- */
+
+.controls {
+    padding: 1rem;
+    background: #333;
+}
+
+.control {
+    height: 2.7rem;
+    background: #444;
+    cursor: pointer;
+    color: white;
+    border: 0;
+    transition: background 150ms;
+}
+
+.control:hover {
+    background: #3f3f3f;
+}
+
+.mixitup-control-active {
+    background: navy;
+}
+
+.mixitup-control-active[data-filter]:after {
+    background: transparent;
+}
+
+.control:first-of-type {
+    border-radius: 3px 0 0 3px;
+}
+
+.control:last-of-type {
+    border-radius: 0 3px 3px 0;
+}
+
+.control[data-filter] + .control[data-sort] {
+    margin-left: .75rem;
+}
+
+.range-slider {
+    margin: 0 1rem;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+.range-slider:last-child {
+    margin-left: 0;
+}
+
+.range-slider::before,
+.range-slider::after,
+.range-slider-label {
+    font-family: 'helvetica-neue', arial, sans-serif;
+}
+
+.range-slider::before,
+.range-slider::after {
+    font-size: .7rem;
+    color: #aaa;
+    content: '30';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 .2rem;
+}
+
+.range-slider::after {
+    content: '130';
+    left: auto;
+    right: 0;
+}
+
+.range-slider-label {
+    display: block;
+    font-size: .8rem;
+    color: #ccc;
+    margin-bottom: .05rem;
+    font-weight: 700;
+}
+
+.range-slider:last-child .range-slider-label {
+    text-align: right;
+}
+
+.range-slider-input {
+    position: relative;
+    background: transparent;
+    -webkit-appearance: none;
+    margin-bottom: .75rem;
+    z-index: 1;
+}
+
+.range-slider-input::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 5px;
+    background: #888;
+    border: none;
+    border-radius: 3px;
+    transition: background 150ms;
+}
+
+.range-slider-input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #5ecdde;
+    margin-top: -6px;
+}
+
+.range-slider-input:focus {
+    outline: none;
+}
+
+/* Container
+---------------------------------------------------------------------- */
+
+.container {
+    padding: 1rem;
+    text-align: justify;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+/* Target Elements
+---------------------------------------------------------------------- */
+
+.mix,
+.gap {
+    display: block;
+    margin: 2px;
+}
+
+.mix {
+    background: #dadada;
+    xx-border-top: .5rem solid currentColor;
+    border-radius: 4px;
+    font-family: sans-serif;
+    width: 20em;
+    height: 15em;
+    overflow: hidden;
+}
+.mix h3 {
+	font-size: 1.2em;
+	text-align: center;
+	background: #bababa;
+    border-radius: 4px 4px 0 0;
+    margin: 0;
+    padding: 0.5rem;
+}
+.mix img {
+	width: 100%;
+	max-height: 100%;
+}
+.mix p {
+	font-size: 0.8em;
+	margin: 0.25em;
+}
+
+/*.mix:before {
+    content: '';
+    display: inline-block;
+    padding-top: 56.25%;
+}*/
+
+/* Grid Breakpoints
+---------------------------------------------------------------------- */
+
+/* 2 Columns */
+
+/*.mix,
+.gap {
+    width: calc(100%/2 - (((2 - 1) * 1rem) / 2));
+}*/
+
+/* 3 Columns */
+
+/*@media screen and (min-width: 541px) {
+    .mix,
+    .gap {
+        width: calc(100%/3 - (((3 - 1) * 1rem) / 3));
+    }
+}*/
+
+/* 4 Columns */
+
+/*@media screen and (min-width: 961px) {
+    .mix,
+    .gap {
+        width: calc(100%/4 - (((4 - 1) * 1rem) / 4));
+    }
+}*/
+
+/* 5 Columns */
+
+/*@media screen and (min-width: 1281px) {
+    .mix,
+    .gap {
+        width: calc(100%/5 - (((5 - 1) * 1rem) / 5));
+    }
+}*/
