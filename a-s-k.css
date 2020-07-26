@@ -13,6 +13,43 @@ body {
     box-sizing: border-box;
 }
 
+/* Navigation */
+nav {
+    display: block;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: #080808;
+}
+
+nav li {
+    padding: 0.5rem 0;
+    display: inline;
+}
+
+nav li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 0.65rem;
+}
+
+nav li a:hover {
+    background-color: #111;
+}
+
+nav li a.active {
+    background-color: #4CAF50;
+}
+
+/* Header */
+heading {
+    clear: both;
+}
+
 /* Controls
 ---------------------------------------------------------------------- */
 
@@ -164,20 +201,20 @@ body {
     overflow: hidden;
 }
 .mix h3 {
-	font-size: 1.2em;
-	text-align: center;
-	background: #bababa;
+    font-size: 1.2em;
+    text-align: center;
+    background: #bababa;
     border-radius: 4px 4px 0 0;
     margin: 0;
     padding: 0.5rem;
 }
 .mix img {
-	width: 100%;
-	max-height: 100%;
+    width: 100%;
+    max-height: 100%;
 }
 .mix p {
-	font-size: 0.8em;
-	margin: 0.25em;
+    font-size: 0.8em;
+    margin: 0.25em;
 }
 
 /*.mix:before {
