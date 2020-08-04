@@ -208,13 +208,15 @@ heading {
     margin: 0;
     padding: 0.5rem;
 }
+.mix a {
+    display: flex;
+    height: 80%;
+    background-image: linear-gradient(to bottom right, #b1b1b1, white);
+}
 .mix img {
+    margin: auto;
     width: 100%;
     max-height: 100%;
-}
-.mix p {
-    font-size: 0.8em;
-    margin: 0.25em;
 }
 
 /*.mix:before {
