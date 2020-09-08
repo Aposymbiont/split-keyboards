@@ -56,10 +56,11 @@ heading {
 .controls {
     padding: 1rem;
     background: #333;
+    color: white;
 }
 
 .control {
-    height: 2.7rem;
+    /*height: 2.7rem;*/
     background: #444;
     cursor: pointer;
     color: white;
@@ -69,14 +70,6 @@ heading {
 
 .control:hover {
     background: #3f3f3f;
-}
-
-.mixitup-control-active {
-    background: navy;
-}
-
-.mixitup-control-active[data-filter]:after {
-    background: transparent;
 }
 
 .control:first-of-type {
@@ -105,7 +98,7 @@ heading {
 .range-slider::before,
 .range-slider::after,
 .range-slider-label {
-    font-family: 'helvetica-neue', arial, sans-serif;
+    font-family: sans-serif;
 }
 
 .range-slider::before,
