@@ -1,5 +1,26 @@
-#!/bin/sh
+#!/bin/bash -e
 
-pandoc --from=markdown --to=html --metadata pagetitle="DIY" --include-in-header=head.hc --include-before-body=nav.hc --wrap=auto about.md > about.html
+if [[ $(cat *.csv | tr -dc ',\n' | uniq) != ',,,,,,,,' ]]; then
+    echo >&2 "Incorrect number of columns in one of the CSV files"
+    exit 1
+fi
+
+pandoc --from=markdown --to=html --metadata pagetitle="About" --include-in-header=head.hc --include-before-body=nav.hc --wrap=auto README.md > about.html
 pandoc --from=markdown --to=html --metadata pagetitle="DIY" --include-in-header=head.hc --include-before-body=nav.hc --wrap=auto diy.md > diy.html
 pandoc --from=markdown --to=html --metadata pagetitle="Links" --include-in-header=head.hc --include-before-body=nav.hc --wrap=auto links.md > links.html
+
+(
+    cat index-head.hc
+
+    grep -h -v -e '^#' -e '^Name,' ergo.csv dish.csv ortho.csv traditional.csv other.csv | \
+        while IFS=, read -r name layout features availability minKeys maxKeys website image note; do
+            cat <<-EOF
+            <div class="mix $layout $features $availability" data-keys="$maxKeys">
+                <h3>$name</h3>
+                <a href="$website"><img src="img/$image"/></a>
+            </div>
+
+EOF
+        done
+    cat index-tail.hc
+) > index.html
