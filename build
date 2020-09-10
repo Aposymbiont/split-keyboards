@@ -12,7 +12,7 @@ pandoc --from=markdown --to=html --metadata pagetitle="Links" --include-in-heade
 (
     cat index-head.hc
 
-    grep -h -v -e '^#' -e '^Name,' ergo.csv dish.csv ortho.csv traditional.csv other.csv | \
+    grep -h -v -e '^#' -e '^Name,' ergo.csv dish.csv ortho.csv traditional.csv other.csv | shuf | \
         while IFS=, read -r name layout features availability minKeys maxKeys website image note; do
             cat <<-EOF
             <div class="mix $layout $features $availability" data-keys="$maxKeys">
