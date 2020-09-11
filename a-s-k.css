@@ -144,7 +144,7 @@ input[type=checkbox]:indeterminate + label {
 }
 
 .range-slider-input::-webkit-slider-runnable-track {
-    width: 300px;
+    width: 250px;
     height: 5px;
     background: #888;
     border: none;
