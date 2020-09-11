@@ -6,25 +6,23 @@ on:
       - master
 
 jobs:
-  convert_via_pandoc:
+  build_site:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
-      - run: |
+
+      - id: markdown_to_html
+        uses: docker://pandoc/latex:2.9
+        with:
+          args: --from=markdown --to=html --metadata pagetitle="About" --include-in-header=head.hc --include-before-body=nav.hc --wrap=auto --output=about.html README.md
+          args: --from=markdown --to=html --metadata pagetitle="DIY" --include-in-header=head.hc --include-before-body=nav.hc --wrap=auto --output=diy.html diy.md
+          args: --from=markdown --to=html --metadata pagetitle="Links" --include-in-header=head.hc --include-before-body=nav.hc --wrap=auto --output=links.html links.md
+
+      - id: index_to_html
+        run: |
           ./build-index
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add -u
-          git commit -m "Generated index page from HTML"
+          git commit -m "Regenerated HTML pages"
           git push
-
-#      - uses: docker://pandoc/latex:2.9
-#        with:
-#          args: --from=markdown --to=html --metadata pagetitle="About" --include-in-header=head.hc --include-before-body=nav.hc --wrap=auto --output=about.html README.md
-#          args: --from=markdown --to=html --metadata pagetitle="DIY" --include-in-header=head.hc --include-before-body=nav.hc --wrap=auto --output=diy.html diy.md
-#          args: --from=markdown --to=html --metadata pagetitle="Links" --include-in-header=head.hc --include-before-body=nav.hc --wrap=auto --output=links.html links.md
-
-#      - uses: actions/upload-artifact@master
-#        with:
-#          name: output
-#          path: output
