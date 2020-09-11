@@ -14,7 +14,7 @@ jobs:
       - id: about_to_html
         uses: docker://pandoc/latex:2.9
         with:
-          args: --from=markdown --to=html --metadata pagetitle="About" --include-in-header=head.hc --include-before-body=nav.hc --wrap=auto --output=about.html README.md
+          args: --from=markdown --to=html --metadata pagetitle="About" --include-in-header=head.hc --include-before-body=nav.hc --wrap=auto --output=about.html about.md
 
       - id: diy_to_html
         uses: docker://pandoc/latex:2.9
