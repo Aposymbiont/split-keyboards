@@ -91,14 +91,14 @@ input[type=checkbox]:indeterminate + label {
 }
 
 .range-slider {
-    margin: 0 1rem;
+    margin: 0 0.05rem 0 0;
     display: inline-block;
     vertical-align: middle;
     position: relative;
 }
 
 .range-slider:last-child {
-    margin-left: 0;
+    margin-right: 0;
 }
 
 .range-slider::before,
@@ -138,6 +138,7 @@ input[type=checkbox]:indeterminate + label {
 
 .range-slider-input {
     position: relative;
+    width: 120px;
     background: transparent;
     margin-bottom: .75rem;
     z-index: 1;
