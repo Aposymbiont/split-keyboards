@@ -11,12 +11,20 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - id: markdown_to_html
+      - id: about_to_html
         uses: docker://pandoc/latex:2.9
         with:
           args: --from=markdown --to=html --metadata pagetitle="About" --include-in-header=head.hc --include-before-body=nav.hc --wrap=auto --output=about.html README.md
-          #args: --from=markdown --to=html --metadata pagetitle="DIY" --include-in-header=head.hc --include-before-body=nav.hc --wrap=auto --output=diy.html diy.md
-          #args: --from=markdown --to=html --metadata pagetitle="Links" --include-in-header=head.hc --include-before-body=nav.hc --wrap=auto --output=links.html links.md
+
+      - id: diy_to_html
+        uses: docker://pandoc/latex:2.9
+        with:
+          args: --from=markdown --to=html --metadata pagetitle="DIY" --include-in-header=head.hc --include-before-body=nav.hc --wrap=auto --output=diy.html diy.md
+
+      - id: links_to_html
+        uses: docker://pandoc/latex:2.9
+        with:
+          args: --from=markdown --to=html --metadata pagetitle="Links" --include-in-header=head.hc --include-before-body=nav.hc --wrap=auto --output=links.html links.md
 
       - id: index_to_html
         run: |
