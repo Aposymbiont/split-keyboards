@@ -1,4 +1,3 @@
-var container = document.querySelector('[data-ref="container"]');
 var minKeysRangeInput = document.querySelector('[name="minKeys"]');
 var maxKeysRangeInput = document.querySelector('[name="maxKeys"]');
 
@@ -64,7 +63,7 @@ layouts.forEach(function (l) {
 });
 
 var fcc = new Map();
-var features = ['encoder', 'trackp', 'display', 'wireless'];
+var features = ['split', 'encoder', 'trackp', 'display', 'wireless'];
 features.forEach(function (l) {
     lEl = document.getElementById(l);
     //console.log(lEl);
@@ -99,6 +98,13 @@ function removeRule(stylesheet, rule) {
             stylesheet.deleteRule(i);
             break;
         }
+    }
+}
+
+function printRules(stylesheet) {
+    console.log("CSS Rules")
+    for (let i=0; i < stylesheet.cssRules.length; i++) {
+        console.log(stylesheet.cssRules[i].cssText);
     }
 }
 

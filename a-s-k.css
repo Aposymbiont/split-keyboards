@@ -59,29 +59,35 @@ heading {
     color: white;
 }
 
-.control {
-    /*height: 2.7rem;*/
-    background: #444;
+fieldset {
+    display: inline-block;
+    border: 1.5px solid #888;
+    color: #eee;
+}
+
+/* "The checkbox hack" https://css-tricks.com/the-checkbox-hack/ */
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox] + label {
     cursor: pointer;
-    color: white;
-    border: 0;
-    transition: background 150ms;
+    user-select: none;
+    display: inline-block;
+    margin-bottom: 0.25em;
+    padding: 0.25em 0.5em;
+    background-color: #f28268;
+    transition: background-color 300ms;
+    color: black;
+    border-radius: 4px;
 }
 
-.control:hover {
-    background: #3f3f3f;
+input[type=checkbox]:checked + label {
+    background-color: #87eba8;
 }
 
-.control:first-of-type {
-    border-radius: 3px 0 0 3px;
-}
-
-.control:last-of-type {
-    border-radius: 0 3px 3px 0;
-}
-
-.control[data-filter] + .control[data-sort] {
-    margin-left: .75rem;
+input[type=checkbox]:indeterminate + label {
+    background-color: #eeeeee;
 }
 
 .range-slider {
@@ -133,7 +139,6 @@ heading {
 .range-slider-input {
     position: relative;
     background: transparent;
-    -webkit-appearance: none;
     margin-bottom: .75rem;
     z-index: 1;
 }
@@ -148,17 +153,12 @@ heading {
 }
 
 .range-slider-input::-webkit-slider-thumb {
-    -webkit-appearance: none;
     border: none;
     height: 16px;
     width: 16px;
     border-radius: 50%;
     background: #5ecdde;
     margin-top: -6px;
-}
-
-.range-slider-input:focus {
-    outline: none;
 }
 
 /* Container

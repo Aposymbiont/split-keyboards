@@ -28,6 +28,9 @@ TODO: Number of rows
 
 ### Features
 
+Two halves
+: two independent parts to the keyboard
+
 Rotary encoder
 : one or more knobs which can press keys, useful for volume up/down, page-up/page-down, etc.
 
