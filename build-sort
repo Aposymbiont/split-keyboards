@@ -1,0 +1,10 @@
+#!/bin/sh -e
+#
+# Sort the CSV data, to keep things tidy.
+#
+
+for i in *.csv; do
+    mv $i $i-unsorted
+    awk 'NR<2 { print $0; next } { print $0 | "sort -i" }' $i-unsorted > $i
+    rm $i-unsorted
+done

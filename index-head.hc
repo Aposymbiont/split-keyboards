@@ -65,11 +65,11 @@
 
             <fieldset>
                 <legend>Availability</legend>
-                <!-- Availability: massproduced, assembled, kit, plans, unavailable -->
+                <!-- Availability: massproduced, assembled, kit, source, unavailable -->
                 <input type="checkbox" id="massproduced" checked><label for="massproduced">Mass produced</label>
                 <input type="checkbox" id="assembled" checked><label for="assembled">Assembled</label>
                 <input type="checkbox" id="kit" checked><label for="kit">Kit</label>
-                <input type="checkbox" id="plans" checked><label for="plans">Plans (source)</label>
+                <input type="checkbox" id="source" checked><label for="source">Source (plans)</label>
                 <input type="checkbox" id="unavailable"><label for="unavailable">Unavailable</label>
             </fieldset>
         </div>

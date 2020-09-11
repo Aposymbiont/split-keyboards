@@ -46,7 +46,7 @@ document.head.appendChild(styleEl);
 var stylesheet = styleEl.sheet;
 stylesheet.insertRule("#Container > .hidden { display: none; }", 0);
 
-var layouts = ['traditional', 'ortho', 'ergo', 'dish', 'massproduced', 'assembled', 'kit', 'plans', 'unavailable'];
+var layouts = ['traditional', 'ortho', 'ergo', 'dish', 'massproduced', 'assembled', 'kit', 'source', 'unavailable'];
 layouts.forEach(function (l) {
     lEl = document.getElementById(l);
     //console.log(lEl);
