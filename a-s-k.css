@@ -164,6 +164,11 @@ input[type=checkbox]:indeterminate + label {
 /* Container
 ---------------------------------------------------------------------- */
 
+.content {
+    padding: 1rem;
+    text-align: justify;
+}
+
 .container {
     padding: 1rem;
     text-align: justify;
