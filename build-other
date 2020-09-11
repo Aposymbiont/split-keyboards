@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+pandoc --from=markdown --to=html --metadata pagetitle="About" --include-in-header=head.hc --include-before-body=nav.hc --wrap=auto README.md > about.html
+pandoc --from=markdown --to=html --metadata pagetitle="DIY" --include-in-header=head.hc --include-before-body=nav.hc --wrap=auto diy.md > diy.html
+pandoc --from=markdown --to=html --metadata pagetitle="Links" --include-in-header=head.hc --include-before-body=nav.hc --wrap=auto links.md > links.html
