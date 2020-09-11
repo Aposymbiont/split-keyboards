@@ -1,6 +1,6 @@
 # Split keyboards gallery
 
-This is an interactive gallery of split keyboards, visible at https://aposymbiont.github.io/awesome-split-keyboards/
+This is an interactive gallery of split keyboards, visible at https://aposymbiont.github.io/split-keyboards/
 
 To be included, keyboards are generally either in two halves, or have a "wedge" in the middle to allow the wrists to lie in a more natural position.
 
