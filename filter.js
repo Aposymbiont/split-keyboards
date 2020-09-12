@@ -1,6 +1,9 @@
 var minKeysRangeInput = document.querySelector('[name="minKeys"]');
 var maxKeysRangeInput = document.querySelector('[name="maxKeys"]');
 
+var minKeysNum = document.getElementById('minKeysNum');
+var maxKeysNum = document.getElementById('maxKeysNum');
+
 /**
  * Reads the values from our two native range inputs, returning an object
  * with `min` and `max` numeric values.
@@ -25,6 +28,9 @@ function getRange() {
  */
 function handleRangeInputChange() {
     var range = getRange();
+
+    minKeysNum.innerHTML = range.min;
+    maxKeysNum.innerHTML = range.max;
 
     document.querySelectorAll('.mix').forEach(function (e) {
         var keys = Number(e.getAttribute('data-keys'));

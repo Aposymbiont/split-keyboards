@@ -101,29 +101,6 @@ input[type=checkbox]:indeterminate + label {
     margin-right: 0;
 }
 
-.range-slider::before,
-.range-slider::after,
-.range-slider-label {
-    font-family: sans-serif;
-}
-
-.range-slider::before,
-.range-slider::after {
-    font-size: .7rem;
-    color: #aaa;
-    content: '30';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 0 .2rem;
-}
-
-.range-slider::after {
-    content: '130';
-    left: auto;
-    right: 0;
-}
-
 .range-slider-label {
     display: block;
     font-size: .8rem;
@@ -140,26 +117,8 @@ input[type=checkbox]:indeterminate + label {
     position: relative;
     width: 120px;
     background: transparent;
-    margin-bottom: .75rem;
+    margin: 0;
     z-index: 1;
-}
-
-.range-slider-input::-webkit-slider-runnable-track {
-    width: 250px;
-    height: 5px;
-    background: #888;
-    border: none;
-    border-radius: 3px;
-    transition: background 150ms;
-}
-
-.range-slider-input::-webkit-slider-thumb {
-    border: none;
-    height: 16px;
-    width: 16px;
-    border-radius: 50%;
-    background: #5ecdde;
-    margin-top: -6px;
 }
 
 /* Container
