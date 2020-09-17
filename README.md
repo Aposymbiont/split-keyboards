@@ -12,10 +12,10 @@ General guidelines for inclusion:
 * The keyboard should use mechanical switches,
 * Keyboards should be in two halves, or have a "wedge" in the middle to allow the wrists to lie in a more natural position,
 * The keyboard should be available for purchase, or a kit should be available for purchase,
-* Or, the source files for the PCB and case should be available for download, and *more than one person* should have made it.
+* Or, the source files for the PCB and case should be available for download.
 * When a keyboard is no longer available, it should be marked "unavailable" and therefore hidden by default.
 
-If you think a keyboard that doesn't fit these guidelines should be included, it's a good idea to think *why*.
+Minor variations on existing designs, created as a personal hobby board, are generally not worth including.
 
 ### Classification
 

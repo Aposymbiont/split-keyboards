@@ -2,9 +2,9 @@
 
 This is an interactive gallery of split keyboards.
 
-The keyboards included are mechanical and have either two halves ar a "wedge" in the middle to allow the wrists to lie in a more natural position.  Many are available for purchase, either assembled or in kit form.  Some only have the source (plans) available, which means ordering the circuit board and case from a manufacturer yourself.
+The keyboards included are mechanical and have either two halves ar a "wedge" in the middle to allow the wrists to lie in a more natural position.  Many are available for purchase, either assembled or in kit form.  Some only have the source (plans) available, which means making (or ordering from a service) the circuit board and case from a manufacturer yourself.
 
-They are further classified as follows:
+The keyboards are further classified as follows:
 
 ### Layout
 Traditional
@@ -20,7 +20,7 @@ Dished
 : a shaped keyboard with thumbkeys and dishes or wells for the fingers.
 
 ### Number of keys
-The minimum and maximum number of keys supported by the keyboard.  Some keyboards can be assembled with a different number of keys (for example, using a double-height key instead of two single-height keys).  In this case, the filter is based on the maximum.
+The minimum and maximum number of keys supported by the keyboard.  Some keyboards can be assembled with a different number of keys (for example, using a double-height key instead of two single-height keys).  Other keyboards are available with several variations on the design.  In either case, the filter is based on the maximum.
 
 ### Features
 
@@ -46,7 +46,7 @@ Mass produced
 
 Assembled
 : Available for purchase pre-assembled and programmed.
-: To distinguish this from the following categories, it omits keyboards where individuals are willing to assemble a kit for others — otherwise there's little point to the filter.  A company should be willing to buy an "assembled" keyboard for an employee, but less likely to ask someone on Reddit to solder a "kit" for them.
+: To distinguish this from the following categories, it omits keyboards where individuals are willing to assemble a kit for others — otherwise there's little point to the filter.  A company should be willing to buy an "assembled" keyboard for an employee, but less likely to ask someone on Reddit to solder a kit (below) for them.
 
 Kit
 : Kit (circuit boards, cases, components etc) available to purchase.
