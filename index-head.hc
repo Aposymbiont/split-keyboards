@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Awesome Split Keyboards</title>
+        <title>Split Keyboards Gallery</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="a-s-k.css" rel="stylesheet"/>
     </head>
