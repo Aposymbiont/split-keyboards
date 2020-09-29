@@ -8,7 +8,10 @@ fi
 (
     cat index-head.hc
 
-    grep -h -v -e '^#' -e '^Name,' ergo.csv dish.csv ortho.csv traditional.csv other.csv | shuf | \
+    (
+        grep -h -v -e '^#' -e '^Name,' ergo.csv dish.csv ortho.csv traditional.csv other.csv | shuf
+        grep -h -v -e '^#' -e '^Name,' placeholders.csv
+    ) | \
         while IFS=, read -r name layout features availability minKeys maxKeys website image note; do
             cat <<-EOF
             <div class="mix $layout $features $availability" data-keys="$maxKeys">

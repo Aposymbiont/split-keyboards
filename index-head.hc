@@ -41,16 +41,18 @@
                     <option value="100"></option>
                     <option value="110"></option>
                     <option value="120"></option>
+                    <option value="130"></option>
+                    <option value="140"></option>
                 </datalist>
 
                 <div class="range-slider">
                     <label class="range-slider-label"><span id="minKeysNum">30</span> minimum keys</label>
-                    <input name="minKeys" class="range-slider-input" type="range" min="30" max="120" value="30" list="keysLegend"/>
+                    <input name="minKeys" class="range-slider-input" type="range" min="30" max="140" value="30" list="keysLegend"/>
                 </div>
 
                 <div class="range-slider">
-                    <label class="range-slider-label"><span id="maxKeysNum">120</span> maximum keys</label>
-                    <input name="maxKeys" class="range-slider-input" type="range" min="30" max="120" value="120" list="keysLegend"/>
+                    <label class="range-slider-label"><span id="maxKeysNum">140</span> maximum keys</label>
+                    <input name="maxKeys" class="range-slider-input" type="range" min="30" max="140" value="140" list="keysLegend"/>
                 </div>
             </fieldset>
 
