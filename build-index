@@ -14,7 +14,7 @@ fi
     ) | \
         while IFS=, read -r name layout features availability minKeys maxKeys website image note; do
             cat <<-EOF
-            <div class="mix $layout $features $availability" data-keys="$maxKeys">
+            <div class="mix $features" data-layout="$layout" data-keys="$maxKeys" data-availability="$availability">
                 <h3>$name</h3>
                 <a href="$website"><img src="img/$image"/></a>
             </div>

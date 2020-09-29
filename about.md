@@ -4,7 +4,9 @@ This is an interactive gallery of split keyboards.
 
 The keyboards included are mechanical and have either two halves ar a "wedge" in the middle to allow the wrists to lie in a more natural position.  Many are available for purchase, either assembled or in kit form.  Some only have the source (plans) available, which means making (or ordering from a service) the circuit board and case from a manufacturer yourself.
 
-The keyboards are further classified as follows:
+A good resource for mass produced, membrane (non-mechanical) keyboards is [Xah-Lee's Ergonomic Keyboard Reviews](http://xahlee.info/kbd/ergonomic_keyboards_index.html).
+
+The mechanical keyboards shown on this site are further classified as follows:
 
 ### Layout
 Traditional

@@ -7,8 +7,6 @@ var maxKeysNum = document.getElementById('maxKeysNum');
 /**
  * Reads the values from our two native range inputs, returning an object
  * with `min` and `max` numeric values.
- *
- * @return {object}
  */
 function getRange() {
     var min = Number(minKeysRangeInput.value);
@@ -21,51 +19,60 @@ function getRange() {
 }
 
 /**
- * Ensures that the mixer is re-filtered whenever the value of a range
- * input changes.
- *
- * @return {void}
+ * Ensures that the mixer is re-filtered whenever the value of the inputs changes.
  */
-function handleRangeInputChange() {
-    var range = getRange();
+function handleFilterChange() {
+    var traditional = document.getElementById('traditional').checked;
+    var ortho = document.getElementById('ortho').checked;
+    var ergo = document.getElementById('ergo').checked;
+    var dish = document.getElementById('dish').checked;
 
+    var range = getRange();
     minKeysNum.innerHTML = range.min;
     maxKeysNum.innerHTML = range.max;
 
-    document.querySelectorAll('.mix').forEach(function (e) {
-        var keys = Number(e.getAttribute('data-keys'));
+    var massproduced = document.getElementById('massproduced').checked;
+    var assembled = document.getElementById('assembled').checked;
+    var kit = document.getElementById('kit').checked;
+    var source = document.getElementById('source').checked;
+    var unavailable = document.getElementById('unavailable').checked;
 
-        if (keys < range.min || keys > range.max) {
-            addClass(e, 'hidden');
-        } else {
+    document.querySelectorAll('.mix').forEach(function (e) {
+        var layout = e.getAttribute('data-layout').split(' ');
+        var keys = Number(e.getAttribute('data-keys'));
+        var availability = e.getAttribute('data-availability').split(' ');
+
+        if ((traditional && layout.includes('traditional') ||
+             ortho && layout.includes('ortho') ||
+             ergo && layout.includes('ergo') ||
+             dish && layout.includes('dish')) &&
+            (keys >= range.min && keys <= range.max) &&
+            (massproduced && availability.includes('massproduced') ||
+             assembled && availability.includes('assembled') ||
+             kit && availability.includes('kit') ||
+             source && availability.includes('source') ||
+             unavailable && availability.includes('unavailable')
+            )) {
             removeClass(e, 'hidden');
+        } else {
+            addClass(e, 'hidden');
         }
     });
 }
 
 // Listen for change events from the two range inputs
-minKeysRangeInput.addEventListener('input', handleRangeInputChange);
-maxKeysRangeInput.addEventListener('input', handleRangeInputChange);
+minKeysRangeInput.addEventListener('input', handleFilterChange);
+maxKeysRangeInput.addEventListener('input', handleFilterChange);
 
 var styleEl = document.createElement('style');
 document.head.appendChild(styleEl);
 var stylesheet = styleEl.sheet;
 stylesheet.insertRule("#Container > .hidden { display: none; }", 0);
 
-var layouts = ['traditional', 'ortho', 'ergo', 'dish', 'massproduced', 'assembled', 'kit', 'source', 'unavailable'];
-layouts.forEach(function (l) {
+var filters = ['traditional', 'ortho', 'ergo', 'dish', 'massproduced', 'assembled', 'kit', 'source', 'unavailable'];
+filters.forEach(function (l) {
     lEl = document.getElementById(l);
-    //console.log(lEl);
-    if (!lEl.checked) {
-        stylesheet.insertRule("#Container > ."+l+" { display: none; }", 0);
-    }
-    lEl.onclick = (function(e) {
-        if (e.target.checked) {
-            removeRule(stylesheet, "#Container > ."+l);
-        } else {
-            stylesheet.insertRule("#Container > ."+l+" { display: none; }", 0);
-        }
-    });
+    lEl.addEventListener('click', handleFilterChange);
 });
 
 var fcc = new Map();
@@ -115,7 +122,11 @@ function printRules(stylesheet) {
 }
 
 function addClass(el, className) {
-    el.className += ' ' + className;
+    var elClass = ' ' + el.className + ' ';
+    if (elClass.indexOf(' ' + className + ' ') == -1) {
+        elClass = elClass += ' ' + className;
+    }
+    el.className = elClass;
 }
 
 function removeClass(el, className) {
