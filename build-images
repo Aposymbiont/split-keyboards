@@ -1,0 +1,9 @@
+#!/bin/zsh
+
+for i in img/source/*.*; do
+    if [[ ! -e img/$i:t ]]; then
+        echo $i
+        convert $i -resize 640x img/$i:t
+        git add $i img/$i:t
+    fi
+done

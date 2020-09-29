@@ -136,3 +136,5 @@ function removeClass(el, className) {
     }
     el.className = elClass;
 }
+
+handleFilterChange();
