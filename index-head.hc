@@ -58,10 +58,10 @@
 
             <fieldset>
                 <legend>Features</legend>
-                <!-- Features: Two part, rotary encoder, trackpoint/pad, display, wireless -->
+                <!-- Features: Two part, rotary encoder, trackball/point/pad, display, wireless -->
                 <input type="checkbox" id="split"><label for="split">Two halves</label>
                 <input type="checkbox" id="encoder"><label for="encoder">Rotary encoder</label>
-                <input type="checkbox" id="trackp"><label for="trackp">Trackpoint</label>
+                <input type="checkbox" id="track"><label for="track">Trackball/pad</label>
                 <input type="checkbox" id="display"><label for="display">Display</label>
                 <input type="checkbox" id="wireless"><label for="wireless">Wireless</label>
             </fieldset>

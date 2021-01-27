@@ -76,7 +76,7 @@ filters.forEach(function (l) {
 });
 
 var fcc = new Map();
-var features = ['split', 'encoder', 'trackp', 'display', 'wireless'];
+var features = ['split', 'encoder', 'track', 'display', 'wireless'];
 features.forEach(function (l) {
     lEl = document.getElementById(l);
     //console.log(lEl);

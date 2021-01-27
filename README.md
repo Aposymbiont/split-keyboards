@@ -50,8 +50,8 @@ This is a list of features, which the user can either require, forbid, or not ca
 Rotary `encoder`
 : one or more knobs which can press keys, useful for volume up/down, page-up/page-down, etc.
 
-`trackp` trackpoint/trackpad
-: an integrated laptop-style mouse
+`track` track ball/point/pad
+: an integrated mouse (a laptop-style trackpoint, a trackpad or a larger trackball)
 
 `display`
 : a display on the keyboard, which can show status (Caps Lock, current layer, macros etc)

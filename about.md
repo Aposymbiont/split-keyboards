@@ -32,8 +32,8 @@ Two halves
 Rotary encoder
 : one or more knobs which can press keys, useful for volume up/down, page-up/page-down, etc.
 
-Trackpoint/trackpad
-: an integrated laptop-style mouse
+Trackball/point/trackpad
+: an integrated trackball, laptop-syle trackpoint, or trackpad mouse.
 
 Display
 : a display on the keyboard, which can show status (Caps Lock, current layer, macros etc)
