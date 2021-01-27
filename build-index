@@ -13,6 +13,11 @@ fi
         grep -h -v -e '^#' -e '^Name,' placeholders.csv
     ) | \
         while IFS=, read -r name layout features availability minKeys maxKeys website image note; do
+            if [[ ! -f img/$image ]]; then
+                echo >&2 "Image img/$image not found for $name"
+                exit 1
+            fi
+
             cat <<-EOF
             <div class="mix $features" data-layout="$layout" data-keys="$maxKeys" data-availability="$availability">
                 <h3>$name</h3>
