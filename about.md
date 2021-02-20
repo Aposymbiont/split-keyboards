@@ -1,6 +1,6 @@
 # Split Keyboards
 
-This is an interactive gallery of split keyboards.
+This is an interactive gallery of split keyboards, based on an [earlier list by diimdeep](https://github.com/diimdeep/awesome-split-keyboards).
 
 The keyboards included are mechanical and have either two halves ar a "wedge" in the middle to allow the wrists to lie in a more natural position.  Many are available for purchase, either assembled or in kit form.  Some only have the source (plans) available, which means making (or ordering from a service) the circuit board and case from a manufacturer yourself.
 
