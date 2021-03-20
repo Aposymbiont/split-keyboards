@@ -1,4 +1,5 @@
 Name,Layout,Features,Availability,MinKeys,MaxKeys,Website,Image,Note
+Bastard,dish,split,kit assembled,https://bastardkb.com/product/bastardkeyboard/,bastard.jpg,
 Concertina,dish,single,source,64,64,https://viktor.eikman.se/gallery/the-concertina/,concertina.jpg,
 DMOTE 2,dish,split,source,60,60,https://viktor.eikman.se/article/the-dmote/,DMOTE.jpg,
 Dactyl Manuform R-Track,dish,split track,source,62,62,https://www.reddit.com/r/MechanicalKeyboards/comments/g3aue6/the_dactylmanuformrtrack_with_qmk_features_on_a/,r-track.jpeg,
@@ -11,4 +12,6 @@ Lagrange,dish,split,source,66,66,https://github.com/dpapavas/lagrange-keyboard,l
 Maltron,dish,single track,massproduced,110,112,https://www.maltron.com/,Maltron.jpg,
 ManuForm,dish,single,source,48,48,https://geekhack.org/index.php?topic=46015.0,manuform.jpg,
 Redox Manuform,dish,split,source,70,70,https://www.thingiverse.com/thing:3503380,redox-manuform.jpg,
+Skeleton Dactyl Mini,dish,split,kit source,36,36,https://github.com/Bastardkb/Skeleton-Dactyl-Mini,skeleton.jpg,
+TBK mini,dish,split,kit assembled,48,48,https://bastardkb.com/product/tbk-mini/,tbk-mini.jpg,
 Track Beast,dish,split track,source,42,78,https://medium.com/@kincade/track-beast-build-log-a-trackball-dactyl-manuform-19eaa0880222,track-beast.jpeg,
