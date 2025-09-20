@@ -37,6 +37,7 @@
 - IRC: #deskthority @ Freenode (web client) - Deskthority's IRC channel
 - IRC: #geekhack @ Freenode (web client) - Geekhack's's IRC channel
 - IRC: #mechboards @ Freenode (web client) - /r/mechanicalkeyboards' IRC channel
+- XMPP: https://xmpp.link/#mechanicalkeyboards@conference.jabjab.de?join
 
 
 ## Ergonomics
